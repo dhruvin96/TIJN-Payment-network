@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<style>
+		.inp
+		{
+			cursor: pointer;
+			padding: 10px;
+			font-size: 18px;
+			text-align: center;
+			background-color: lightblue;
+
+		}
+
+		.inp:hover 
+		{
+			background-color: lightgreen;
+		}
+
+		a
+		{
+			text-decoration: none;
+		}
+
+		body
+		{
+			background : linear-gradient( rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3) ), url('homepic.jpg');;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+	</style>
+	<link rel="icon" type="image/png" href="icon1.png">
+</head>
+<body>
+	<br><br><br><br><br><br><br><br>
+	<center>
+		<form action="login.php" method="POST">
+			<fieldset style="width: 40%; background-color: rgba(255, 255, 255, 0.8);"><legend><b><span style="font-size: 36px; color: rgba(0, 0, 0, 0.6);">Enter your login credentials</span></b></legend>
+				<table cellpadding="5">
+					<tr>
+						<td>
+							<h2>Username</h2>
+						</td>
+						<td><b>:</b></td>
+						<td><input type="text" name="uname" title="Enter username"></td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Password</h2>
+						</td>
+						<td><b>:</b></td>
+						<td>
+							<input type="Password" name="pass" title="Enter Password">
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="3"><center><input type="submit" name="submit" value="Sign Up" class="inp">   <input type="reset" value="Reset" class="inp"></center></td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+		<h1><b>OR</b></h1>
+			<fieldset style="width: 30%; border-color: rgba(0, 0, 0, 0.2);background-color: rgba(255, 255, 255, 0.8);">
+			<h1><a href="register.html">Create an account</a></h1>
+			</fieldset>
+	</center>
+</body>
+</html>

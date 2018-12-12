@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registeration</title>
+	<style>
+		body
+		{
+			background : linear-gradient( rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3) ), url('homepic.jpg');;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		.input
+		{
+			width: 140%;
+			padding: 5;
+		}
+
+		.inp
+		{
+			cursor: pointer;
+			padding: 10px;
+			font-size: 18px;
+			text-align: center;
+			background-color: lightblue;
+
+		}
+
+		.inp:hover 
+		{
+			background-color: lightgreen;
+		}
+
+	</style>
+	<link rel="icon" type="image/png" href="icon1.png">
+</head>
+<body>
+	<br><br><br><br>
+	<center>
+		<form action="register.php" method="post">
+			<fieldset style="width: 50%; background-color: rgba(255, 255, 255, 0.8);">
+				<legend><b><span style="font-size: 30px; color: rgba(0, 0, 0, 0.6);">Fill login details</span></b></legend>
+				<table align="left" cellpadding="2">
+					<tr>
+						<td><h2>Username<b style="color: red;">*</b></h2></td>
+						<td><b>:</b></td>
+						<td><input class="input" type="text" name="username" title="Give username: It can include [a-z,A-z,0-9] but start with character" required></td>
+					</tr>
+
+					<tr>
+						<td><h2>Password<b style="color: red;">*</b></h2></td>
+						<td><b>:</b></td>
+						<td><input class="input" type="password" name="password" title="Give strong password" required></td>
+					</tr>
+				</table>
+			</fieldset>
+
+			<fieldset style="width: 50%; background-color: rgba(255, 255, 255, 0.8);">
+				<legend><b><span style="font-size: 30px; color: rgba(0, 0, 0, 0.6);">Personal Details</span></b></legend>
+				<table align="left" cellpadding="2">
+					<tr>
+						<td><h2>SSN<b style="color: red;">*</b></h2></td>
+						<td><b>:</b></td>
+						<td><input class="input" type="password" name="ssn" title="Give social security number: Government issued 9 digit TIN number" required></td>
+					</tr>
+
+					<tr>
+						<td><h2>Name<b style="color: red;">*</b></h2></td>
+						<td><b>:</b></td>
+						<td><input class="input" type="text" name="name" title="Give your name" required></td>
+					</tr>
+
+					<tr>
+						<td><h2>E-Mail Id<b style="color: red;">*</b></h2></td>
+						<td><b>:</b></td>
+						<td><input class="input" type="text" name="email" title="Give your email" required></td>
+					</tr>
+
+					<tr>
+						<td><h2>Phone No</h2></td>
+						<td><b>:</b></td>
+						<td><input class="input" type="text" name="phone" title="Give your phone number" ></td>
+					</tr>
+				</table>
+			</fieldset>
+
+			<fieldset style="width: 50%; background-color: rgba(255, 255, 255, 0.8);">
+				<legend><b><span style="font-size: 30px; color: rgba(0, 0, 0, 0.6);">Primary Bank accounts details</span></b></legend>
+				<table align="left" cellpadding="2">
+					<tr>
+						<td><h2>Bank Id<b style="color: red;">*</b></h2></td>
+						<td><b>:</b></td>
+						<td><input class="input" type="text" name="bankid" title="Provide with id given to you by bank" placeholder="DO NOT ENTER WRONG NUMBER" required></td>
+					</tr>
+
+					<tr>
+						<td><h2>Account Number<b style="color: red;">*</b></h2></td>
+						<td><b>:</b></td>
+						<td><input class="input" type="text" name="account" title="Give your bank account number" placeholder="DO NOT ENTER WRONG NUMBER" required></td>
+					</tr>
+
+				</table>
+			</fieldset>
+
+			<fieldset style="width: 50%; background-color: rgba(255, 255, 255, 0.8);">
+				<table cellpadding="2" >
+						<tr>
+							<td colspan="2"><input type="submit" name="submit" value="Register" class="inp">   <input type="reset" value="Reset" class="inp"></td>
+						</tr>
+					</table>
+			</fieldset>
+
+		</form>
+	</center>
+</body>
+</html>

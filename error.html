@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Error</title>
+	<link rel="icon" type="image/png" href="icon1.png">
+</head>
+<body>
+	<script type="text/javascript">
+
+		function getVars()
+		{
+   			 var vars = {};
+   			 var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        		vars[key] = value;
+   			 	});
+   		 	return vars;
+		}
+		var page=getVars()["var"];
+
+		switch(page)
+		{
+			case 'login':
+				alert('Invalid login credential. Re-login......');
+				function go1() 
+	   			{  
+	        		window.location="login.html"; 
+	    		} 
+	    		document.write("<h1>You will be redirected back to login page .....<h1>"); 
+	    		setTimeout('go1()', 5000);
+			break;
+
+			case 'register':
+				alert('Bad data. Re-register......');
+				function go2() 
+	   			{  
+	        		window.location="register.html"; 
+	    		} 
+	    		document.write("<h1>You will be redirected back to registeration page .....<h1>"); 
+	    		setTimeout('go2()', 2000);
+			break;
+
+			case 'registera':
+				alert('Error. Re-try after sometime......');
+				function go3() 
+	   			{  
+	        		window.location="Homepage.html"; 
+	    		} 
+	    		document.write("<h1>Taking you out .....<h1>"); 
+	    		setTimeout('go3()', 2000);
+			break;
+
+			case 'cd':
+				alert('No data provided......');
+				function go4() 
+	   			{  
+	        		window.location="account.php"; 
+	    		} 
+	    		document.write("<h1>You will be redirected back to account page .....<h1>"); 
+	    		setTimeout('go4()', 2000);
+			break;
+
+			case 'cda':
+				alert('Re-try......');
+				function go5() 
+	   			{  
+	        		window.location="account.php"; 
+	    		} 
+	    		document.write("<h1>You will be redirected back to account page .....<h1>"); 
+	    		setTimeout('go5()', 2000);
+			break;
+
+			case 'transaction':
+				alert('Transaction Failed......');
+				function go6() 
+	   			{  
+	        		window.location="sendmoney.php"; 
+	    		} 
+	    		document.write("<h1>You will be redirected back. Re-try .....<h1>"); 
+	    		setTimeout('go6()', 2000);
+			break;
+
+			case 'transactiona':
+				alert('Runtime ERROR......');
+				function go7() 
+	   			{  
+	        		window.location="sendmoney.php"; 
+	    		} 
+	    		document.write("<h1>You will be redirected back. Re-try .....<h1>"); 
+	    		setTimeout('go7()', 2000);
+			break;
+
+			case 'transactionb':
+				alert('Recipient user does not exists......');
+				function go8() 
+	   			{  
+	        		window.location="sendmoney.php"; 
+	    		} 
+	    		document.write("<h1>You will be redirected back. Re-try .....<h1>"); 
+	    		setTimeout('go8()', 2000);
+			break;
+
+			case 'transactionelse':
+				alert('Operation not found......');
+				function go9() 
+	   			{  
+	        		window.location="main.php"; 
+	    		} 
+	    		document.write("<h1>You will be redirected back. Re-try .....<h1>"); 
+	    		setTimeout('go9()', 2000);
+			break;
+
+			case 'transactionreq':
+				alert('Requested User not found......');
+				function go10() 
+	   			{  
+	        		window.location="requestmoney.php"; 
+	    		} 
+	    		document.write("<h1>You will be redirected back. Re-try .....<h1>"); 
+	    		setTimeout('go10()', 2000);
+			break;
+
+			case 'transactionreqa':
+				alert('Runtime Error on request......');
+				function go11() 
+	   			{  
+	        		window.location="requestmoney.php"; 
+	    		} 
+	    		document.write("<h1>You will be redirected back. Re-try .....<h1>"); 
+	    		setTimeout('go11()', 2000);
+			break;
+
+			case 'transactionless':
+				alert('In-Sufficient Balance!!!!!!!!!');
+				function go12() 
+	   			{  
+	        		window.location="sendmoney.php"; 
+	    		} 
+	    		document.write("<h1>You will be redirected back. Re-try .....<h1>"); 
+	    		setTimeout('go12()', 2000);
+			break;
+
+			case 'search':
+				alert('Search error!!!!!!!!!');
+				function go13() 
+	   			{  
+	        		window.location="main.php"; 
+	    		} 
+	    		document.write("<h1>You will be redirected back. Re-try .....<h1>"); 
+	    		setTimeout('go13()', 2000);
+			break;
+
+			default:
+				alert('Undefined error. Re-try......');
+				function god() 
+	   			{  
+	        		window.location="Homepage.html"; 
+	    		} 
+	    		setTimeout('god()', 5000);
+		}
+		
+	</script>
+
+</body>
+</html>
